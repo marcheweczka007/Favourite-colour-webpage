@@ -1,4 +1,14 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
+  display: grid;
+}
+
+.wrapper {
   background-color: #fff;
   box-sizing: border-box;
   padding: 0;
@@ -6,12 +16,9 @@ body {
   font-family: "Luckiest Guy", cursive;
   background-image: url(pedzle.jpg);
   background-repeat: no-repeat;
+  background-size: 1200px;
   background-position: center;
-}
-
-.wrapper {
-  width: 1200px;
-  margin: 20px 300px;
+  margin: 0px 300px;
 }
 
 main {
@@ -21,6 +28,7 @@ main {
 }
 
 header {
+  margin-top: 35px;
   display: block;
   font-family: "Luckiest Guy", cursive;
   color: white;
@@ -43,14 +51,14 @@ header:hover {
     opacity: 0.3;
   }
   100% {
-    top: -300px;
+    top: 0px;
   }
 }
 .border-radious {
   border-radius: 50%;
 }
 
-input {
+.inputSearch {
   display: inline-block;
   padding: 20px;
   background-image: url("search.svg");
@@ -63,6 +71,41 @@ input {
   font-size: 22px;
   height: 50px;
   border-radius: 16px;
+}
+
+.inputTop {
+  background-color: #D4EFDF;
+  z-index: 0;
+  font-size: 16px;
+  display: inline-block;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid black;
+}
+.inputTop ul {
+  display: inline-block;
+}
+
+.btn {
+  background-color: #D4EFDF;
+  border: none;
+  font-size: 20px;
+  font-family: "Luckiest Guy";
+  color: #F8C471;
+  padding: 8px;
+}
+
+.btn:hover {
+  color: #45B39D;
+  border: none;
+  outline: none;
+}
+
+.top-nav {
+  background-color: #D4EFDF;
+  justify-content: end;
+  display: grid;
+  grid-template-columns: 200px;
 }
 
 .placeholder {
@@ -274,7 +317,7 @@ p:hover {
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 300px;
+  grid-template-rows: 400px;
 }
 
 .imageOne {
@@ -332,6 +375,11 @@ footer {
 
 .f-size {
   font-size: 12px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
 }
 
 /*# sourceMappingURL=style.css.map */
