@@ -1,0 +1,317 @@
+body {
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Luckiest Guy", cursive;
+  background-image: url(pedzle.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.wrapper {
+  margin: 20px 300px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 250px 250px;
+}
+
+header {
+  font-family: "Luckiest Guy", cursive;
+  color: white;
+  font-size: 90px;
+  text-align: center;
+  animation-name: header;
+  animation-duration: 3s;
+}
+
+header:hover {
+  color: blue;
+}
+
+@keyframes header {
+  0% {
+    opacity: 0.1;
+    top: -300px;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    top: -300px;
+  }
+}
+.border-radious {
+  border-radius: 50%;
+}
+
+input {
+  padding: 20px;
+  background-image: url("search.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  border: none;
+  border-bottom: 2px solid black;
+  width: 240px;
+  float: right;
+  font-size: 22px;
+  height: 50px;
+  border-radius: 16px;
+}
+
+.placeholder {
+  color: #fff;
+}
+
+textarea:focus, input:focus {
+  outline: none;
+}
+
+ul {
+  float: right;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 400px;
+  animation-name: ul;
+  animation-duration: 1.8s;
+}
+
+@keyframes ul {
+  0% {
+    opacity: 0;
+    right: -300px;
+  }
+  100% {
+    opacity: 0.3;
+    right: 0px;
+  }
+}
+li a {
+  display: block;
+  color: #b4afaf;
+  padding: 16px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #927278;
+  color: #fff;
+}
+
+li a.active {
+  color: #fff;
+  background-color: #927278;
+}
+
+.boxOne {
+  position: relative;
+  animation-name: example;
+  animation-duration: 1s;
+}
+
+.boxOne:hover {
+  background-color: rgba(158, 40, 19, 0.692);
+}
+
+@keyframes example {
+  0% {
+    opacity: 0.1;
+    left: -600px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+.boxThree {
+  position: relative;
+  animation-name: exampleThree;
+  animation-duration: 1.2s;
+}
+
+.boxThree:hover {
+  background-color: rgba(29, 199, 199, 0.562);
+}
+
+@keyframes exampleThree {
+  0% {
+    left: -600px;
+  }
+  50% {
+    opacity: 0.2;
+    top: 300px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+.boxTwo {
+  position: relative;
+  animation-name: exampleTwo;
+  animation-duration: 1.8s;
+}
+
+.boxTwo:hover {
+  background-color: rgba(230, 148, 193, 0.836);
+}
+
+@keyframes exampleTwo {
+  0% {
+    right: -600px;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    right: 0px;
+  }
+}
+.boxFour {
+  position: relative;
+  animation-name: exampleFour;
+  animation-duration: 1.5s;
+}
+
+.boxFour:hover {
+  background-color: rgba(240, 255, 255, 0.425);
+}
+
+@keyframes exampleFour {
+  0% {
+    right: -600px;
+  }
+  50% {
+    bottom: 300px;
+  }
+  100% {
+    opacity: 0.2;
+    right: 0px;
+  }
+}
+.boxFive {
+  position: relative;
+  animation-name: exampleFive;
+  animation-duration: 1.5s;
+}
+
+.boxFive:hover {
+  background-color: rgba(255, 127, 80, 0.548);
+}
+
+@keyframes exampleFive {
+  0% {
+    left: -600px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+.boxSix {
+  position: relative;
+  animation-name: exampleSix;
+  animation-duration: 1.5s;
+  animation-direction: alternate;
+}
+
+.boxSix:hover {
+  background-color: rgba(128, 255, 0, 0.226);
+}
+
+@keyframes exampleSix {
+  0% {
+    right: -600px;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    right: 0px;
+  }
+}
+.blue {
+  background-color: #45B39D;
+}
+
+.red {
+  background-color: #A2D9CE;
+}
+
+.purple {
+  background-color: #D4EFDF;
+}
+
+.yellow {
+  background-color: #FCF3CF;
+}
+
+.pink {
+  background-color: #FAD7A0;
+}
+
+.orange {
+  background-color: #F8C471;
+}
+
+p {
+  text-align: center;
+  /* border-radius: 20px; */
+  padding: 16px;
+  background-color: rgba(0, 0, 0, 0.466);
+  color: white;
+  font-size: 30px;
+}
+
+p:hover {
+  background-color: #d5a8d6;
+}
+
+.info {
+  display: flex;
+  justify-content: space-evenly;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: background-color 0.25s linear;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 300px;
+}
+
+.imageOne {
+  background-image: url(artOne.jpg);
+  background-size: cover;
+  height: 100%;
+}
+
+.imageTwo {
+  background-image: url(artTwo.jpg);
+  background-size: cover;
+  height: 100%;
+}
+
+.imageThree {
+  background-image: url(artThree.jpg);
+  background-size: cover;
+  height: 100%;
+}
+
+.margin-20 {
+  margin: 20px;
+}
+
+.main-text {
+  background-color: black;
+  margin: 20px;
+  color: #fff;
+  font-size: 30px;
+  padding: 16px;
+}
+
+/*# sourceMappingURL=style.css.map */
