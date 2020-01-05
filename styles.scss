@@ -21,7 +21,7 @@ main {
     grid-template-rows: 250px 250px ;   
 }
 header {
-    
+    display: block;
     font-family: 'Luckiest Guy', cursive;
     color: rgb(255, 255, 255);
     font-size: 90px;
@@ -44,6 +44,7 @@ header:hover {
 //     padding: 20px;
 // }
 input {
+    display: inline-block;
     padding: 20px;
     background-image: url('search.svg');
     background-repeat: no-repeat;
@@ -222,6 +223,7 @@ p:hover {
     margin: 20px;
 }
 .main-text {
+    display: inline-block;
     line-height: 1.4;
     background-color: black;
     margin: 16px;

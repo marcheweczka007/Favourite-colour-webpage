@@ -21,6 +21,7 @@ main {
 }
 
 header {
+  display: block;
   font-family: "Luckiest Guy", cursive;
   color: white;
   font-size: 90px;
@@ -50,6 +51,7 @@ header:hover {
 }
 
 input {
+  display: inline-block;
   padding: 20px;
   background-image: url("search.svg");
   background-repeat: no-repeat;
@@ -298,6 +300,7 @@ p:hover {
 }
 
 .main-text {
+  display: inline-block;
   line-height: 1.4;
   background-color: black;
   margin: 16px;
